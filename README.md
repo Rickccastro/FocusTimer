@@ -1,5 +1,6 @@
 # FocusTimer
-Temporizador 
+Temporizador básico que tem as funções play , pause , adicionar 5s, remover 5s ,trocar o tema do app,executar sons relaxantes de fundo tais quais floresta,chuva,pessoas conversando e chamas.
+
 
 Telas:
 ![image](https://github.com/Rickccastro/FocusTimer/assets/127992895/e76aeec5-b9aa-444a-84db-33afec7df15d)
