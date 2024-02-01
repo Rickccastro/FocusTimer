@@ -1,5 +1,5 @@
 # FocusTimer
-Temporizador básico que tem as funções play , pause , adicionar 5s, remover 5s ,trocar o tema do app,executar sons relaxantes de fundo tais quais floresta,chuva,pessoas conversando e chamas.
+Temporizador básico que tem as funções play , pause , adicionar e remover 5s ,trocar o tema do app,executar sons relaxantes de fundo tais quais floresta,chuva,pessoas conversando e chamas.
 
 
 Telas:
