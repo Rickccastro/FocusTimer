@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    font-size: 62.5%;
+    --num: #323238;
+
+}
+.darkMode,.darkMode button{
+    background-color: black;
+    color: white;
+}
+
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.timer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 82.1rem;
+    height: 33.6rem;
+    gap: 10rem;
+}
+
+#timer{
+    color: #323238;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    gap: 19rem;
+
+}
+#timer img{
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+#timerButtons span{
+    display: none;
+}
+
+/*Sound icons*/
+ button{
+    border: none;
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 30.8rem;
+    height: 33.6rem;
+    gap: 32px
+}
+
+
+

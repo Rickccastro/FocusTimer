@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus-Timer 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module" src="src/main.js" defer></script>
+    
+</head>
+
+<body>
+
+    <div class="app">
+
+        <div class="timer-container">
+
+            <div id="timer">
+                <span data-action="set" id="minutes">00</span>
+                <span>:</span>
+                <span data-action="set" id="seconds">00</span>
+
+                <div id="timerButtons">
+
+                    <button>
+                        <span>Ativar play button</span>
+                        <img data-action="play" src="assets/timer-icons/play.svg" alt="play-button">
+                    </button>
+    
+                    <button>
+                        <span>Ativar pause button</span>
+                        <img data-action="pause" src="assets/timer-icons/pause.svg" alt="pause-button">
+                    </button>
+
+                    <button>
+                        <span>Aumentar em 5 min o tempo </span>
+                        <img  data-action="timeUp" src="assets/timer-icons/hightime.svg" alt="high-time">
+                    </button>
+    
+                    <button>
+                        <span>Diminuir em 5 min o tempo </span>
+                        <img data-action="timeDown"  src="assets/timer-icons/lowtime.svg" alt="low-time">
+                    </button>
+
+                    <button
+                    id="toggle-mode">
+                        <span>Ativar light mode</span>
+                        <img data-action="toggleTheme" src="https://static-00.iconduck.com/assets.00/dark-theme-icon-512x512-185rlszm.png" alt="darkLight-mode">
+                    </button>
+
+                </div>
+
+            </div>
+
+            <section id="timerButtonsMusic">
+                <button>
+                    <img data-action="forest" id="forest" src="assets/sounds-icons/forest.svg" alt="forest-button">
+                </button>
+
+                <button>
+                    <img data-action="cloud" id="cloud" src="assets/sounds-icons/cloud.svg" alt="cloud-button">
+                </button>
+
+                <button>
+                    <img data-action="mkt" id="mkt" src="assets/sounds-icons/mkt.svg" alt="mkt-button">
+                </button>
+
+                <button>
+                    <img  data-action="flame"id="flame" src="assets/sounds-icons/flame.svg" alt="flame-button">
+                </button>
+            </section>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
