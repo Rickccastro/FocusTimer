@@ -1,9 +1,10 @@
 import state from "./state.js"
 import * as elements from "./elements.js"
+import * as sounds from "./sounds.js"
 
 export function countdown() {
 
-    clearTimeout()
+    clearTimeout(state.countdown)
     if (state.isRunning == false) {
 
         return
@@ -16,7 +17,7 @@ export function countdown() {
 
     if (seconds < 0 || seconds > 60) {
         seconds = 59
-        minutes--
+        minutes-- 
     }
 
     if (minutes < 0) {
@@ -25,7 +26,7 @@ export function countdown() {
 
     updateDisplay(minutes, seconds)
 
-    setTimeout(() => countdown(), 1000)
+   state.countdown= setTimeout(() => countdown(), 1000)
 
 }
 
@@ -59,4 +60,12 @@ export function updateDisplay(minutes, seconds) {
 
     elements.minutes.textContent = String(minutes).padStart(2, "0")
     elements.seconds.textContent = String(seconds).padStart(2, "0")
+}
+
+export function stopMusic(){
+    sounds.AllMusics.buttonPressFloresta.pause()
+    sounds.AllMusics.buttonPressCloud.pause()
+    sounds.AllMusics.buttonPressMkt.pause()
+    sounds.AllMusics.buttonPressFlame.pause()
+
 }

@@ -3,7 +3,10 @@ export default{
     seconds:0,
     isRunning:false,
     isPaused:true,
-    countdown:null
-} 
+    countdown:null,
+    forest:false,
+    cloud:false,
+    mkt:false,
+    flame:false,
 
- 
+} 
